@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Lawyer's website</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script>
+        const menu = document.getElementById('menu')
+
+        menu.addEventListener('click', function(){
+            let flyout = document.getElementById('links').classList
+
+            flyout.toggle('hidden')
+        })
+    </script> -->
+</head>
+<body class="bg-white">
+    <div class="px-2 flex flex-col">
+        <nav class="bg-white w-full mt-4 p-4 px-6 flex justify-between items-center rounded-sm fixed shadow-md z-40">
+            <h1 class="text-lg text-red-500"><strong>TOP</strong>FIRM</h1>
+            <ul class="hidden md:flex gap-6 text-sm text-gray-800 font-semibold">
+                <li class="hover:underline hover:text-red-500 transition"><a href="#">Practice Areas</a></li>
+                <li class="hover:underline hover:text-red-500 transition"><a href="#">Property</a></li>
+                <li class="hover:underline hover:text-red-500 transition"><a href="#">Real Estate</a></li>
+                <li class="hover:underline hover:text-red-500 transition"><a href="#">Matrimonial</a></li>
+                <li class="hover:underline hover:text-red-500 transition"><a href="#">Business</a></li>
+            </ul>
+            <a href="#" class="hidden md:flex text-sm p-2 bg-red-500 rounded-md text-white hover:bg-red-400">Learn more
+            </a>
+            <button id="menu" class="text-sm p-2 border-2 rounded-md border-red-500 text-red-500 font-semibold hover:bg-red-500 hover:text-white transition flex md:hidden">Menu</button>
+        </nav>
+        <ul id="links" class="hidden md:hidden gap-6 text-sm text-gray-800 font-semibold bg-white flex-col mt-20 fixed w-full z-20">
+            <li class="hover:bg-red-600 hover:text-white transition p-4"><a href="#">Practice Areas</a></li>
+            <li class="hover:bg-red-600 hover:text-white transition p-4"><a href="#">Property</a></li>
+            <li class="hover:bg-red-600 hover:text-white transition p-4"><a href="#">Real Estate</a></li>
+            <li class="hover:bg-red-600 hover:text-white transition p-4"><a href="#">Matrimonial</a></li>
+            <li class="hover:bg-red-600 hover:text-white transition p-4"><a href="#">Business</a></li>
+        </ul>
+    </div>
+
+    <div class="bg-[url('bg.png')] bg-cover bg-center justify-between items-start md:items-center py-36 px-8 md:px-32 md:py-48 text-white flex flex-col md:flex-row gap-24 md:gap-16">
+        <div class="md:w-1/2 w-full">
+            <p class="text-sm">Lorem ipsum dolor sit</p>
+            <h1 class="text-3xl font-semibold my-2">Lorem ipsum dolor sit, amet consectetur.</h1>
+            <p class="text-sm">Consult a Lawyer now.</p>
+            <img class="my-8 w-52" src="profile.png" alt="Lawyer's Profile">
+            <a class="p-3 bg-red-600 rounded-md hover:opacity-90" href="#">Talk to a Lawyer</a>
+        </div>
+        <div class="flex flex-row justify-center items-center px-8">
+            <div class="z-10 flex flex-col gap-4 -m-8">
+                <div class="text-black shadow-md bg-white p-4 rounded-sm text-sm">
+                    <h3 class="font-bold">Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="text-black shadow-md bg-white p-4 rounded-sm text-sm">
+                    <h3 class="font-bold">Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="text-black shadow-md bg-white p-4 rounded-sm text-sm">
+                    <h3 class="font-bold">Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <img class="border-white border-4 rounded-full w-32 h-32 md:h-60 md:w-60" src="hero-img.png" alt="Lawyer">
+        </div>
+    </div>
+
+    <section class=" py-24 px-8 md:py-36 md:px-24 flex flex-col md:flex-row -mt-24 shadow-md justify-center items-center">
+        <div class="md:w-1/2">
+            <h1 class="text-4xl text-gray-600">Trust your future & 
+                <span class="text-red-600 font-bold">Peaceful life</span></h1>
+            <p class="text-sm py-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem libero expedita qui molestias nulla aperiam sint fuga, voluptatibus quia iste similique vero nihil reprehenderit fugit optio obcaecati asperiores repellendus dolore!
+            </p>
+        </div>
+        <div class="flex flex-row text-black gap-4">
+            <div class="flex flex-col gap-4">
+                <div class="p-4 flex flex-col justify-center items-center bg-blue-300 rounded">
+                    <h3 class="font-bold">Immigration</h3>
+                    <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="p-4 flex flex-col justify-center items-center bg-pink-300 rounded">
+                    <h3 class="font-bold">Immigration</h3>
+                    <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="p-4 flex flex-col justify-center items-center bg-pink-300 rounded">
+                    <h3 class="font-bold">Immigration</h3>
+                    <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="p-4 flex flex-col justify-center items-center bg-blue-300 rounded">
+                    <h3 class="font-bold">Immigration</h3>
+                    <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" py-24 px-8 md:py-28 md:px-24 flex flex-col md:flex-row shadow-md justify-center items-center">
+        <img class="md:w-1/2" src="connect.png" alt="">
+        <div class="">
+            <h1 class="text-4xl text-gray-600">Connect with our 
+                <span class="text-red-600 font-bold">Legal Advisors</span></h1>
+            <p class="text-sm py-4 my-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem libero expedita qui molestias nulla aperiam sint fuga, voluptatibus quia iste similique vero nihil reprehenderit fugit optio obcaecati asperiores repellendus dolore!
+            </p>
+            <a class="p-3 bg-red-600 hover:opacity-90 text-white my-24" href="#">Talk to a Lawyer</a>
+        </div>
+    </section>
+
+    <section class=" py-24 px-8 md:py-28 md:px-24 flex flex-col shadow-md justify-center items-center">
+        <h1 class="text-4xl text-gray-600 text-center">Pick the slot to get <span class="text-red-600 font-bold">expert solution</span></h1>
+
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+            <div class="my-6">
+                <h3 class="text-xl md:text-3xl text-gray-600 mb-2">
+                    Right legal advice today will save your big cost tomorrow.
+                </h3>
+                <ol class="list-decimal ml-4 text-sm flex gap-4 flex-col text-gray-600">
+                    <li>73k Calls Connected</li>
+                    <li>63k Positive Result</li>
+                    <li>4.6/5 Average Rating</li>
+                </ol>
+            </div>
+            <div class="flex flex-col gap-2 w-full md:mt-12">
+                <div class="w-full flex flex-row justify-between items-center bg-white p-4 rounded-md shadow-lg border-2 border-gray-200 hover:bg-purple-600 group transition">
+                    <div class="text-black w-full group-hover:text-white">
+                        <h4 class="font-bold">60 Minutes</h4>
+                        <p>Minutes valid for 30 days</p>
+                    </div>
+                    <h1 class="font-bold text-green-900 text-4xl group-hover:text-white">$20</h1>
+                </div>
+                <div class="w-full flex flex-row justify-between items-center bg-white p-4 rounded-md shadow-lg border-2 border-gray-200 hover:bg-purple-600 group transition">
+                    <div class="text-black w-full group-hover:text-white">
+                        <h4 class="font-bold">45 Minutes</h4>
+                        <p>Minutes valid for 30 days</p>
+                    </div>
+                    <h1 class="font-bold text-green-900 text-4xl group-hover:text-white">$20</h1>
+                </div>
+                <div class="w-full flex flex-row justify-between items-center bg-white p-4 rounded-md shadow-lg border-2 border-gray-200 hover:bg-purple-600 group transition">
+                    <div class="text-black w-full group-hover:text-white">
+                        <h4 class="font-bold">30 Minutes</h4>
+                        <p>Minutes valid for 30 days</p>
+                    </div>
+                    <h1 class="font-bold text-green-900 text-4xl group-hover:text-white">$20</h1>
+                </div>
+                <div class="w-full flex flex-row justify-between items-center bg-white p-4 rounded-md shadow-lg border-2 border-gray-200 hover:bg-purple-600 group transition">
+                    <div class="text-black w-full group-hover:text-white">
+                        <h4 class="font-bold">15 Minutes</h4>
+                        <p>Minutes valid for 30 days</p>
+                    </div>
+                    <h1 class="font-bold text-green-900 text-4xl group-hover:text-white">$20</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" py-24 px-8 md:py-28 md:px-24 flex flex-col shadow-md justify-center items-center">
+        <h1 class="text-4xl text-gray-600 text-center mb-12">Experience a smarter <span class="text-red-600 font-bold">legal solution platform in your hand</span></h1>
+
+        <div class="flex flex-col md:flex-row text-black gap-4">
+            <div class="flex flex-col gap-4">
+                <div class="p-4 flex flex-col justify-center items-center bg-blue-300 rounded">
+                    <h3 class="font-bold">Immigration Assistance</h3>
+                    <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="p-4 flex flex-col justify-center items-center bg-pink-300 rounded">
+                    <h3 class="font-bold">Intellectual Property</h3>
+                    <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="p-4 flex flex-col justify-center items-center bg-blue-300 rounded">
+                    <h3 class="font-bold">Compliance Lawyer</h3>
+                    <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="p-4 flex flex-col justify-center items-center bg-pink-300 rounded">
+                    <h3 class="font-bold">Making a will</h3>
+                    <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="p-4 flex flex-col justify-center items-center bg-blue-300 rounded">
+                    <h3 class="font-bold">Legal Documentation</h3>
+                    <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="p-4 flex flex-col justify-center items-center bg-pink-300 rounded">
+                    <h3 class="font-bold">Estate Planning</h3>
+                    <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <a class="p-3 bg-red-600 hover:opacity-90 text-white my-12" href="#">Talk to a Lawyer</a>
+    </section>
+
+    <section class=" py-24 px-8 md:py-28 md:px-24 flex flex-col shadow-md justify-center items-center">
+        <h1 class="text-4xl text-gray-600 text-center mb-12">Success Stories <span class="text-red-600 font-bold">To know about our Lawyers</span></h1>
+
+        <div class="flex flex-col md:flex-row gap-6">
+            <div class="flex flex-col justify-center items-center p-4 border-2 border-gray-100 rounded shadow-sm">
+                <img class="w-16 h-16" src="hero-img.png" alt="Lawyer">
+                <h4 class="font-bold mt-3">Bukunmi Akinyemi</h4>
+                <p class="text-sm text-gray-500">Intellectual Property Lawyer</p>
+                <p class="text-center text-sm mt-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, sit molestiae modi obcaecati tenetur suscipit offici
+                </p>
+            </div>
+            <div class="flex flex-col justify-center items-center p-4 border-2 border-gray-100 rounded shadow-sm">
+                <img class="w-16 h-16" src="hero-img.png" alt="Lawyer">
+                <h4 class="font-bold mt-3">Bukunmi Akinyemi</h4>
+                <p class="text-sm text-gray-500">Intellectual Property Lawyer</p>
+                <p class="text-center text-sm mt-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, sit molestiae modi obcaecati tenetur suscipit offici
+                </p>
+            </div>
+            <div class="flex flex-col justify-center items-center p-4 border-2 border-gray-100 rounded shadow-sm">
+                <img class="w-16 h-16" src="hero-img.png" alt="Lawyer">
+                <h4 class="font-bold mt-3">Bukunmi Akinyemi</h4>
+                <p class="text-sm text-gray-500">Intellectual Property Lawyer</p>
+                <p class="text-center text-sm mt-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, sit molestiae modi obcaecati tenetur suscipit offici
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="p-8 flex justify-center items-center bg-red-600 text-white">
+        Developed by Bukunmi Akinyemi
+    </div>
+
+</body>
+</html>
